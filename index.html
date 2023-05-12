@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='pt-BR'>
-  <head>
+
+<head>
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -16,36 +17,33 @@
   <script src='./js/main.js' defer></script>
   <title>Pokémon | Bruno Henrique</title>
 </head>
-  <body>
-    <header>
-      <a href="#">
-        <img src="./assets/pokeball.png" alt="Imagem de uma pokebola" class="logo">
-      </a>
-      <button id="botan-alterar-tema">
-        <img src="./assets/sun.png" alt="imagem do sol" class="imagem-botao">
+
+<body>
+  <header>
+    <a href="#">
+      <img src="./assets/pokeball.png" alt="Imagem de uma pokebola" class="logo">
+    </a>
+    <button id="botan-alterar-tema">
+      <img src="./assets/sun.png" alt="imagem do sol" class="imagem-botao">
+    </button>
+  </header>
+
+  <main>
+    <ul class="listagem-pokemon" id="lista-pokemon">
+    </ul>
+
+    <div class="paginacao">
+      <button id="carregarMaisBotao" type="button">
+        Carregar Mais
       </button>
-    </header>
+    </div>
 
-    <main>
-      <ul class="listagem-pokemon">
+  </main>
 
-        <li class="cartao-pokemon">
-          <div class="informacoes">
-            <span>Bulbasaur</span>
-            <span>001</span>
-          </div>
+  <!-- JavaScript PokeAPI -->
+  <script src="./js/pokemon-model.js"></script>
+  <script src="./js/poke-api.js"></script>
+  <script src="./js/lista-pokemon.js"></script>
+</body>
 
-          <img src="./assets/bulbasaur.gif" alt="imagem do bulbasaur" class="gif">
-
-          <ul class="tipos">
-            <li class="tipo grama">Grama</li>
-            <li class="tipo veneno">Veneno</li>
-          </ul>
-
-          <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, quibusdam?</p>
-        </li>
-
-      </ul>
-    </main>
-  </body>
 </html>
