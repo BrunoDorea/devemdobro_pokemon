@@ -17,7 +17,7 @@ function loadPokemonItens(offset, limit) {
             <img src="${pokemon.photo}" alt="imagem do bulbasaur" class="gif">
 
             <ul class="tipos">
-                ${pokemon.types.map((type) => `<li class="tipo ${pokemon.type}">${pokemon.type}</li>`).join('')}
+                ${pokemon.types.map((type) => `<li class="tipo ">${type}</li>`).join('')}
             </ul>
 
         </li>
@@ -25,8 +25,6 @@ function loadPokemonItens(offset, limit) {
         pokemonList.innerHTML += newHtml
     })
 }
-
-// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png
 
 loadPokemonItens(offset, limit)
 
