@@ -20,6 +20,8 @@ function loadPokemonItens(offset, limit) {
                 ${pokemon.types.map((type) => `<li class="tipo ">${type}</li>`).join('')}
             </ul>
 
+            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, quibusdam?</p>
+
         </li>
         `).join('')
         pokemonList.innerHTML += newHtml
