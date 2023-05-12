@@ -17,7 +17,7 @@ function loadPokemonItens(offset, limit) {
             <img src="${pokemon.photo}" alt="imagem do bulbasaur" class="gif">
 
             <ul class="tipos">
-                ${pokemon.types.map((type) => `<li class="tipo ">${type}</li>`).join('')}
+                ${pokemon.types.map((type) => `<li class="tipo ${type}">${type}</li>`).join('')}
             </ul>
 
             <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, quibusdam?</p>

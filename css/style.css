@@ -15,14 +15,29 @@
     --cinza-escuro: #212121;
     --branco: #f5f5f5;
     --azul-claro: #d8e3ec;
-    --azul-claro2: #96d9d6;
+    --azul-claro-2: #96d9d6;
     --roxo-botao: #6c79db;
-    --cinza-escuro2: #a8a8a8;
-    --verde-grama: #7ac74c;
-    --roxo-veneno: #df67ddfb;
-    --vermelho-fogo: #ee8130;
-    --azul-agua: #6390f0;
-    --amarelo-inseto: #a6b91a;
+    --cinza-escuro-2: #a8a8a8;
+
+    /* cores dos tipos dos pokemons */
+    --bug: #a6b91a;
+    --dark: #725847;
+    --dragon: #6f38f6;
+    --electric: #f7cf2e;
+    --fairy: #f9aec7;
+    --fighting: #bf3029;
+    --fire: #ee8130;
+    --flying: #a98ff0;
+    --ghost: #6e5896;
+    --grass: #7ac74c;
+    --ground: #dfbf69;
+    --ice: #98d5d7;
+    --normal: #a6a877;
+    --poison: #df67ddfb;
+    --psychic: #f65687;
+    --rock: #b8a137;
+    --steel: #b9b7cf;
+    --water: #6390f0;
 }
 
 body {
@@ -97,11 +112,11 @@ main .cartao-pokemon {
 }
 
 main .cartao-pokemon:hover {
-    background-color: var(--azul-claro2);
+    background-color: var(--azul-claro-2);
 }
 
 .modo-escuro .cartao-pokemon {
-    background-color: var(--cinza-escuro2);
+    background-color: var(--cinza-escuro-2);
 }
 
 main .cartao-pokemon .informacoes {
@@ -132,31 +147,87 @@ main .cartao-pokemon .tipo {
     border-radius: 1rem;
 }
 
-.grama {
-    background-color: var(--verde-grama);
-}
-
-.veneno {
-    background-color: var(--roxo-veneno);
-}
-
-.fogo {
-    background-color: var(--vermelho-fogo);
-}
-
-.agua {
-    background-color: var(--azul-agua);
-}
-
-.inseot {
-    background-color: var(--amarelo-inseto);
-}
-
 main .descricao {
     max-height: 8rem;
     overflow-y: scroll;
     font-size: 1.2rem;
     padding-right: 1rem;
+}
+
+
+/* Tipos dos Pokemons */
+.grass {
+    background-color: var(--grass);
+}
+
+.poison {
+    background-color: var(--poison);
+}
+
+.fire {
+    background-color: var(--fire);
+}
+
+.water {
+    background-color: var(--water);
+}
+
+.bug {
+    background-color: var(--bug);
+}
+
+.flying {
+    background-color: var(--flying);
+}
+
+.normal {
+    background-color: var(--normal);
+}
+
+
+.electric {
+    background-color: var(--electric);
+}
+
+.ice {
+    background-color: var(--ice);
+}
+
+.ground {
+    background-color: var(--ground);
+}
+
+.fighting {
+    background-color: var(--fighting);
+}
+
+.psychic {
+    background-color: var(--psychic);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.rock {
+    background-color: var(--rock);
+}
+
+
+.ghost {
+    background-color: var(--ghost);
+}
+
+.steel {
+    background-color: var(--steel);
+}
+
+.dragon {
+    background-color: var(--dragon);
+}
+
+.fairy {
+    background-color: var(--fairy);
 }
 
 /* Scroll Bar */
@@ -182,9 +253,9 @@ main .descricao {
     align-items: center;
     width: 100%;
     padding: 1rem;
-  }
-  
-  .paginacao button {
+}
+
+.paginacao button {
     padding: .5rem .5rem;
     margin: .5rem 0;
     background-color: var(--roxo-botao);
@@ -193,4 +264,4 @@ main .descricao {
     color: #fff;
     font-size: 1.2rem;
     cursor: pointer;
-  }
+}
