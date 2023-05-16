@@ -75,7 +75,7 @@ header .imagem-botao {
     transition: 0.2s ease-in-out;
 }
 
-header #botan-alterar-tema {
+header #botao-alterar-tema {
     background: none;
     border: none;
 }
